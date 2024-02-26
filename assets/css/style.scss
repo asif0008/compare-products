@@ -73,6 +73,13 @@ $primary-color: #DEF1FA;
     opacity: 1;
 }
 
+@media screen and (min-width:1600px) {
+    .container {
+        width: 100%;
+        max-width: 100% !important;
+    }
+}
+
 @media screen and (max-width:769px) {
     .bg-image {
         background: url('../images/bg-img-tablet.png') no-repeat center/cover;
