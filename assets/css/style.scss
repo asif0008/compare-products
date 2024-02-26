@@ -32,7 +32,7 @@ $primary-color: #DEF1FA;
 }
 
 .bg-image {
-    background: url('/assets/images/bg-image.png') no-repeat center/cover;
+    background: url('../images/bg-image.png') no-repeat center/cover;
 }
 .extension-widget {
     background-color: #fff;
@@ -75,6 +75,6 @@ $primary-color: #DEF1FA;
 
 @media screen and (max-width:769px) {
     .bg-image {
-        background: url('/assets/images/bg-img-tablet.png') no-repeat center/cover;
+        background: url(../images/bg-img-tablet.png) no-repeat center/cover;
     }
 }
