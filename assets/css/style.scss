@@ -9,8 +9,6 @@
 .container {
     width: 100%;
     max-width: 1340px !important;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 // variables
@@ -37,7 +35,6 @@ $primary-color: #DEF1FA;
     background: url('/assets/images/bg-image.png') no-repeat center/cover;
 }
 .extension-widget {
-    width: 60%;
     background-color: #fff;
     box-shadow: 0px 1px 19px 0px #052F5E33;
     opacity: 0;
@@ -57,18 +54,12 @@ $primary-color: #DEF1FA;
         &:hover .points {
             color: $green-color;
         }
-        &:hover .miles-svg {
-            display: block;
-        }
         .miles {
             color: #26262666;
             font-weight: 500;
             background: #2626260D;
             border-radius: 4px;
             transition: all .5s ease;
-        }
-        .miles-svg {
-            display: none;
         }
         .points {
             color: #000;
@@ -82,3 +73,8 @@ $primary-color: #DEF1FA;
     opacity: 1;
 }
 
+@media screen and (max-width:769px) {
+    .bg-image {
+        background: url('/assets/images/bg-img-tablet.png') no-repeat center/cover;
+    }
+}

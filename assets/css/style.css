@@ -8,8 +8,6 @@
 .container {
   width: 100%;
   max-width: 1340px !important;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .bg-green {
@@ -33,7 +31,6 @@
 }
 
 .extension-widget {
-  width: 60%;
   background-color: #fff;
   box-shadow: 0px 1px 19px 0px rgba(5, 47, 94, 0.2);
   opacity: 0;
@@ -55,18 +52,12 @@
 .extension-widget .card:hover .points {
   color: #3FD14A;
 }
-.extension-widget .card:hover .miles-svg {
-  display: block;
-}
 .extension-widget .card .miles {
   color: rgba(38, 38, 38, 0.4);
   font-weight: 500;
   background: rgba(38, 38, 38, 0.0509803922);
   border-radius: 4px;
   transition: all 0.5s ease;
-}
-.extension-widget .card .miles-svg {
-  display: none;
 }
 .extension-widget .card .points {
   color: #000;
@@ -76,4 +67,10 @@
 
 .extension-widget.visible {
   opacity: 1;
+}
+
+@media screen and (max-width: 769px) {
+  .bg-image {
+    background: url("/assets/images/bg-img-tablet.png") no-repeat center/cover;
+  }
 }/*# sourceMappingURL=style.css.map */

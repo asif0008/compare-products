@@ -1,6 +1,7 @@
 const extensionIcon = document.querySelector('.extension-icon');
 const extensionWidget = document.querySelector('.extension-widget');
 
+
 extensionIcon.addEventListener('click', (e) => {
     e.stopPropagation();
     extensionWidget.classList.toggle('visible');
