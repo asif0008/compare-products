@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 * {
     padding: 0;
@@ -16,6 +16,7 @@
 // variables
 $inria-font: "Inria Serif", serif;
 $open-font: "Open Sans", sans-serif;
+$inter-font: "Inter", sans-serif;
 $green-color: #3FD14A;
 $primary-color: #DEF1FA;
 
@@ -28,12 +29,45 @@ $primary-color: #DEF1FA;
 .open-font {
     font-family: $open-font;
 }
+.inter-font {
+    font-family: $inter-font;
+}
 
 .bg-image {
     background: url('/assets/images/bg-image.png') no-repeat center/cover;
 }
 .extension-widget {
-    height: 200px;
-    background-color: red;
+    width: 60%;
+    background-color: #fff;
+    box-shadow: 0px 1px 19px 0px #052F5E33;
+    .card {
+        border: 0.48px solid #2626261A;
+        padding: 8px 8px 15px 8px;
+        border-radius: 4px;
+        &:hover {
+            border: 0.48px solid #2DB038;
+            background: #2DB0380D;
+        }
+        &:hover .miles {
+            background: $green-color;
+            color: #fff;
+        }
+        &:hover .points {
+            color: $green-color;
+        }
+        .miles {
+            font-size: 12px;
+            color: #26262666;
+            font-weight: 500;
+            background: #2626260D;
+            padding: 5px 15px;
+            border-radius: 4px;
+        }
+        .points {
+            font-size: 15px;
+            color: #000;
+            font-weight: 700;
+        }
+    }
 }
 
