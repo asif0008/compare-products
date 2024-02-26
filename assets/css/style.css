@@ -36,6 +36,8 @@
   width: 60%;
   background-color: #fff;
   box-shadow: 0px 1px 19px 0px rgba(5, 47, 94, 0.2);
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 .extension-widget .card {
   border: 0.48px solid rgba(38, 38, 38, 0.1019607843);
@@ -53,16 +55,25 @@
 .extension-widget .card:hover .points {
   color: #3FD14A;
 }
+.extension-widget .card:hover .miles-svg {
+  display: block;
+}
 .extension-widget .card .miles {
-  font-size: 12px;
   color: rgba(38, 38, 38, 0.4);
   font-weight: 500;
   background: rgba(38, 38, 38, 0.0509803922);
-  padding: 5px 15px;
   border-radius: 4px;
+  transition: all 0.5s ease;
+}
+.extension-widget .card .miles-svg {
+  display: none;
 }
 .extension-widget .card .points {
-  font-size: 15px;
   color: #000;
   font-weight: 700;
+  transition: all 0.5s ease;
+}
+
+.extension-widget.visible {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

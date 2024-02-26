@@ -1,24 +1,19 @@
 const extensionIcon = document.querySelector('.extension-icon');
 const extensionWidget = document.querySelector('.extension-widget');
 
-extensionWidget.style.display = 'none';
-
 extensionIcon.addEventListener('click', (e) => {
-        e.stopPropagation()
-        if(extensionWidget.style.display === 'none') {
-            extensionWidget.style.display = 'block';
-            extensionIcon.style.display = 'none'
-        }else {
-            extensionWidget.style.display = 'none'
-            extensionIcon.style.display = 'block';
-        }
+    e.stopPropagation();
+    extensionWidget.classList.toggle('visible');
+    extensionIcon.style.display = 'none';
 });
 
 document.body.addEventListener('click', () => {
-    extensionWidget.style.display = 'none';
-    extensionIcon.style.display = 'block';
-})
+    if (extensionWidget.classList.contains('visible')) {
+        extensionWidget.classList.remove('visible');
+        extensionIcon.style.display = 'block';
+    }
+});
 
 extensionWidget.addEventListener('click', (e) => {
-    e.stopPropagation();
-})
+    e.stopPropagation(); // Prevent closing when clicking inside the widget
+});

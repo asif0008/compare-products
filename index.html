@@ -13,7 +13,7 @@
     <section class="w-100 bg-image">
         <header></header>
         <section class="container mx-auto py-8 md:py-12">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="flex flex-col gap-3 md:gap-6 my-auto">
                     <h1 class="text-white inria-font font-bold text-4xl sm:text-5xl md:text-[64px] text-center md:text-left">
                         All Your Cards, <br> All the Rewards
@@ -34,9 +34,11 @@
                     </div>
                 </div>
                 <div>
-                    <div class="relative">
-                        <img src="assets/images/hero-img.png" alt="hero">
-                        <div class="absolute bottom-[25px] right-[8.1px] cursor-pointer extension-icon">
+                    <div class="relative my-auto">
+                        <img class="hidden lg:block" src="assets/images/hero-img.png" alt="hero image">
+                        <img class="hidden md:block lg:hidden" src="assets/images/hero-img.png" alt="hero image">
+                        <img class="block md:hidden" src="assets/images/hero-img.png" alt="hero image">
+                        <div class="absolute bottom-[25px] right-[8.1px] cursor-pointer extension-icon z-50">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                                 <path d="M0 2.5C0 1.11929 1.11929 0 2.5 0H40V40H2.5C1.11929 40 0 38.8807 0 37.5V2.5Z" fill="url(#paint0_linear_2081_10147)"/>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M24.7803 30.0699H28.7361V16.4029H24.7803V30.0699Z" fill="white"/>
@@ -78,7 +80,7 @@
                                 </div>
                             </div>
                             <div class="mt-4">
-                                <h3 class="flex items-center gap-[5px] text-sm font-bold">
+                                <h3 class="flex items-center gap-[5px] text-[8px] md:text-sm font-bold">
                                     Estimated Checkout Rewards
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 9 9" fill="none">
                                         <g clip-path="url(#clip0_2081_10788)">
@@ -97,53 +99,56 @@
                             <!-- Card -->
                             <div class="card mt-3 transition-all duration-300">
                                 <div class="flex items-center justify-between">
-                                    <h6 class="miles">
+                                    <h6 class="miles text-[6px] md:text-sm px-2 py-1 md:px-4 flex items-center gap-1">
+                                        <svg class="miles-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 6 6" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.46072 0.567057H5.24773C5.40513 0.567057 5.51007 0.671992 5.51007 0.829395V1.45901C5.51007 2.06238 5.06409 2.56083 4.46072 2.63953V2.66576C4.46072 3.42654 3.93604 4.05615 3.22773 4.21356L3.41136 4.76447H4.01474C4.11968 4.76447 4.22461 4.84317 4.25085 4.9481L4.46072 5.55148H1.31266L1.52253 4.9481C1.54876 4.84317 1.6537 4.76447 1.75863 4.76447H2.36201L2.54565 4.21356C1.83733 4.05615 1.31266 3.42654 1.31266 2.66576V2.63953C0.709281 2.56083 0.263306 2.06238 0.263306 1.45901V0.829395C0.263306 0.671992 0.368241 0.567057 0.525644 0.567057H1.31266V0.304718H4.46072V0.567057ZM0.787976 1.45894C0.787976 1.77374 1.02408 2.03608 1.31265 2.11478V1.09166H0.787976V1.45894ZM3.57809 3.17793L2.88685 2.79775L2.19561 3.17793L2.36842 2.48669L1.84999 1.79545H2.57579L2.88685 1.10421L3.19791 1.79545H3.92371L3.40528 2.48669L3.57809 3.17793ZM4.46067 2.11478C4.74924 2.06232 4.98535 1.77374 4.98535 1.45894V1.09166H4.46067V2.11478Z" fill="white"/>
+                                        </svg>
                                         3x Miles
                                     </h6>
-                                    <h6 class="points">
+                                    <h6 class="points text-[6px] md:text-sm">
                                         3 Points
                                     </h6>
                                 </div>
                                 <div class="flex items-center justify-between mt-3">
                                     <div>
-                                        <p class="text-sm text-gray-300 font-medium">First Capital</p>
-                                        <h5 class="text-lg font-bold">Cash Max™ Card</h5>
+                                        <p class="text-[8px] md:text-xs text-gray-300 font-medium">First Capital</p>
+                                        <h5 class="text-[8px] md:text-sm font-bold">Cash Max™ Card</h5>
                                     </div>
-                                    <img class="w-[100px] card-img" src="assets/images/card.png" alt="Card">
+                                    <img class="w-[50px] md:w-[100px] card-img" src="assets/images/card.png" alt="Card">
                                 </div>
                             </div>
-                            <div class="card mt-1 transition-all duration-300">
+                            <div class="card mt-1 transition-all duration-500">
                                 <div class="flex items-center justify-between">
-                                    <h6 class="miles">
+                                    <h6 class="miles text-[6px] md:text-sm px-2 py-1 md:px-4">
                                         2x Miles
                                     </h6>
-                                    <h6 class="points">
+                                    <h6 class="points text-[6px] md:text-sm">
                                         3 Points
                                     </h6>
                                 </div>
                                 <div class="flex items-center justify-between mt-3">
                                     <div>
-                                        <p class="text-sm text-gray-300 font-medium">Bank of USA®</p>
-                                        <h5 class="text-lg font-bold">Premium Credit Card</h5>
+                                        <p class="text-[8px] md:text-xs text-gray-300 font-medium">Bank of USA®</p>
+                                        <h5 class="text-[8px] md:text-sm font-bold">Premium Credit Card</h5>
                                     </div>
-                                    <img class="w-[100px] card-img" src="assets/images/card-1.png" alt="Card">
+                                    <img class="w-[50px] md:w-[100px] card-img" src="assets/images/card-1.png" alt="Card">
                                 </div>
                             </div>
                             <div class="card mt-1 transition-all duration-300">
                                 <div class="flex items-center justify-between">
-                                    <h6 class="miles">
+                                    <h6 class="miles text-[6px] md:text-sm px-2 py-1 md:px-4">
                                         Cashback 1.5% 
                                     </h6>
-                                    <h6 class="points">
+                                    <h6 class="points text-[6px] md:text-sm">
                                         2 Points
                                     </h6>
                                 </div>
                                 <div class="flex items-center justify-between mt-3">
                                     <div>
-                                        <p class="text-sm text-gray-300 font-medium">MyChoice</p>
-                                        <h5 class="text-lg font-bold">Travel Rewards Credit Card</h5>
+                                        <p class="text-[8px] md:text-xs text-gray-300 font-medium">MyChoice</p>
+                                        <h5 class="text-[8px] md:text-sm font-bold">Travel Rewards Credit Card</h5>
                                     </div>
-                                    <img class="w-[100px] card-img" src="assets/images/card-2.png" alt="Card">
+                                    <img class="w-[50px] md:w-[100px] card-img" src="assets/images/card-2.png" alt="Card">
                                 </div>
                             </div>
                         </div>
