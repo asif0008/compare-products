@@ -86,6 +86,9 @@
   .bg-image {
     background: url("../images/tablet-bg.png") no-repeat top center/cover;
   }
+  .tilt-container:hover {
+    transform: none !important;
+  }
 }
 @media screen and (max-width: 576px) {
   .bg-image {

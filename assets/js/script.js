@@ -31,7 +31,7 @@ tiltContainer.addEventListener('mousemove', (e) => {
 });
 
 tiltContainer.addEventListener('mouseleave', () => {
-    tiltContainer.style.transition = 'transform 0.5s ease';
+    tiltContainer.style.transition = 'transform 1s ease-in-out';
     tiltContainer.style.transform = 'rotateY(0deg) rotateX(0deg)';
 });
 
