@@ -30,36 +30,43 @@
   background: url("../images/desktop-bg.png") no-repeat center/cover;
 }
 
-.extension-widget {
+.tilt-container {
+  perspective: 15000px;
+  transition: transform 0.8s ease;
+}
+.tilt-container:hover {
+  transform: rotateX(20deg) rotateY(20deg);
+}
+.tilt-container .extension-widget {
   background-color: #fff;
   box-shadow: 0px 1px 19px 0px rgba(5, 47, 94, 0.2);
   opacity: 0;
   transition: opacity 0.5s ease;
 }
-.extension-widget .card {
+.tilt-container .extension-widget .card {
   border: 0.48px solid rgba(38, 38, 38, 0.1019607843);
   padding: 8px 8px 15px 8px;
   border-radius: 4px;
 }
-.extension-widget .card:hover {
+.tilt-container .extension-widget .card:hover {
   border: 0.48px solid #2DB038;
   background: rgba(45, 176, 56, 0.0509803922);
 }
-.extension-widget .card:hover .miles {
+.tilt-container .extension-widget .card:hover .miles {
   background: #3FD14A;
   color: #fff;
 }
-.extension-widget .card:hover .points {
+.tilt-container .extension-widget .card:hover .points {
   color: #3FD14A;
 }
-.extension-widget .card .miles {
+.tilt-container .extension-widget .card .miles {
   color: rgba(38, 38, 38, 0.4);
   font-weight: 500;
   background: rgba(38, 38, 38, 0.0509803922);
   border-radius: 4px;
   transition: all 0.5s ease;
 }
-.extension-widget .card .points {
+.tilt-container .extension-widget .card .points {
   color: #000;
   font-weight: 700;
   transition: all 0.5s ease;

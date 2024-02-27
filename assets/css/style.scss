@@ -34,40 +34,48 @@ $primary-color: #DEF1FA;
 .bg-image {
     background: url('../images/desktop-bg.png') no-repeat center/cover;
 }
-.extension-widget {
-    background-color: #fff;
-    box-shadow: 0px 1px 19px 0px #052F5E33;
-    opacity: 0;
-    transition: opacity .5s ease;
-    .card {
-        border: 0.48px solid #2626261A;
-        padding: 8px 8px 15px 8px;
-        border-radius: 4px;
-        &:hover {
-            border: 0.48px solid #2DB038;
-            background: #2DB0380D;
-        }
-        &:hover .miles {
-            background: $green-color;
-            color: #fff;
-        }
-        &:hover .points {
-            color: $green-color;
-        }
-        .miles {
-            color: #26262666;
-            font-weight: 500;
-            background: #2626260D;
+.tilt-container {
+    perspective: 15000px;
+    transition: transform .8s ease;
+    &:hover {
+        transform: rotateX(20deg) rotateY(20deg);
+    }
+    .extension-widget {
+        background-color: #fff;
+        box-shadow: 0px 1px 19px 0px #052F5E33;
+        opacity: 0;
+        transition: opacity .5s ease;
+        .card {
+            border: 0.48px solid #2626261A;
+            padding: 8px 8px 15px 8px;
             border-radius: 4px;
-            transition: all .5s ease;
-        }
-        .points {
-            color: #000;
-            font-weight: 700;
-            transition: all .5s ease;
+            &:hover {
+                border: 0.48px solid #2DB038;
+                background: #2DB0380D;
+            }
+            &:hover .miles {
+                background: $green-color;
+                color: #fff;
+            }
+            &:hover .points {
+                color: $green-color;
+            }
+            .miles {
+                color: #26262666;
+                font-weight: 500;
+                background: #2626260D;
+                border-radius: 4px;
+                transition: all .5s ease;
+            }
+            .points {
+                color: #000;
+                font-weight: 700;
+                transition: all .5s ease;
+            }
         }
     }
 }
+
 
 .extension-widget.visible {
     opacity: 1;

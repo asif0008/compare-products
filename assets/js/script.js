@@ -1,3 +1,4 @@
+// Extension widget js
 const extensionIcon = document.querySelector('.extension-icon');
 const extensionWidget = document.querySelector('.extension-widget');
 
@@ -18,3 +19,23 @@ document.body.addEventListener('click', () => {
 extensionWidget.addEventListener('click', (e) => {
     e.stopPropagation();
 });
+
+// 3D title effect js
+
+const tiltContainer = document.querySelector('.tilt-container');
+
+tiltContainer.addEventListener('mousemove', (e) => {
+    const xAxis = (window.innerWidth / 2 - e.pageX) / 60;
+    const yAxis = (window.innerHeight / 2 - e.pageY) / 30;
+    tiltContainer.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+});
+
+tiltContainer.addEventListener('mouseleave', () => {
+    tiltContainer.style.transition = 'transform 0.5s ease';
+    tiltContainer.style.transform = 'rotateY(0deg) rotateX(0deg)';
+});
+
+tiltContainer.addEventListener('mouseenter', () => {
+    tiltContainer.style.transition = 'none';
+});
+
