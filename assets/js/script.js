@@ -16,5 +16,5 @@ document.body.addEventListener('click', () => {
 });
 
 extensionWidget.addEventListener('click', (e) => {
-    e.stopPropagation(); // Prevent closing when clicking inside the widget
+    e.stopPropagation();
 });
