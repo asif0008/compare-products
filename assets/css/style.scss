@@ -32,7 +32,7 @@ $primary-color: #DEF1FA;
 }
 
 .bg-image {
-    background: url('../images/bg-image.png') no-repeat center/cover;
+    background: url('../images/desktop-bg.png') no-repeat center/cover;
 }
 .extension-widget {
     background-color: #fff;
@@ -80,8 +80,13 @@ $primary-color: #DEF1FA;
     }
 }
 
-@media screen and (max-width:769px) {
+@media screen and (max-width:991px) {
     .bg-image {
-        background: url('../images/bg-img-tablet.png') no-repeat center/cover;
+        background: url('../images/tablet-bg.png') no-repeat top center / cover;
+    }
+}
+@media screen and (max-width:576px) {
+    .bg-image {
+        background: url('../images/mobile-bg.png') no-repeat top right / cover;
     }
 }
