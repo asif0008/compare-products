@@ -40,11 +40,14 @@ $primary-color: #DEF1FA;
     &:hover {
         transform: rotateX(20deg) rotateY(20deg);
     }
+    .extension-icon {
+        transition: display 1s ease-in-out;
+    }
     .extension-widget {
         background-color: #fff;
         box-shadow: 0px 1px 19px 0px #052F5E33;
         opacity: 0;
-        transition: opacity .5s ease;
+        transition: opacity .8s ease;
         .card {
             border: 0.48px solid #2626261A;
             padding: 8px 8px 15px 8px;
