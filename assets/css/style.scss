@@ -37,6 +37,10 @@ $primary-color: #DEF1FA;
 .tilt-container {
     perspective: 15000px;
     transition: transform .8s ease;
+    // & > img {
+    //     height: auto;
+    //     width: 65%;
+    // }
     &:hover {
         transform: rotateX(20deg) rotateY(20deg);
     }
