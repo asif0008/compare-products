@@ -37,6 +37,10 @@
 .tilt-container:hover {
   transform: rotateX(20deg) rotateY(20deg);
 }
+.tilt-container .slide-left {
+  animation: slideMe 1s ease-in 2s forwards;
+  opacity: 0;
+}
 .tilt-container .extension-icon {
   transition: display 1s ease-in-out;
 }
@@ -79,6 +83,34 @@
   opacity: 1;
 }
 
+@keyframes slideMe {
+  0% {
+    transform: skewX(33deg) translateX(500px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  60% {
+    transform: skewX(0px);
+  }
+  62% {
+    transform: skewX(0deg) translateX(30px);
+  }
+  70% {
+    transform: skewX(-10deg);
+  }
+  80% {
+    transform: skewX(0deg) translateX(0);
+  }
+  90% {
+    transform: skewX(-5deg);
+  }
+  100% {
+    transform: skewX(0deg);
+    opacity: 1;
+  }
+}
 @media screen and (min-width: 1600px) {
   .container {
     width: 100%;
