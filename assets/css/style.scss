@@ -41,7 +41,7 @@ $primary-color: #DEF1FA;
         transform: rotateX(20deg) rotateY(20deg);
     }
     .slide-left {
-        animation: slideMe 1s ease-in 2s forwards;
+        animation: slideMe 1s ease-in 1s forwards;
         opacity: 0;
     }
     .extension-icon {
