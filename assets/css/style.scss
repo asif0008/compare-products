@@ -116,16 +116,37 @@ $primary-color: #DEF1FA;
     }
 }
 
+// Autograph Journey CSS start
+
+.autograp-journey {
+    background: url('../images/autograph-bg.png') no-repeat center / cover;
+    .radial-gradient {
+        background: radial-gradient(50% 50% at 50% 50%, rgba(89, 54, 0, 0.2) 0%, rgba(100, 60, 0, 0) 100%);
+    }
+}
+
+// Autograph Journey CSS End
+
+
+
+
 @media screen and (min-width:1600px) {
-    .container {
+    .my-container {
         width: 100%;
         max-width: 100% !important;
+    }
+    .container {
+        width: 100%;
+        max-width: 1540px !important;
     }
 }
 
 @media screen and (max-width:991px) {
     .bg-image {
         background: url('../images/tablet-bg.png') no-repeat top center / cover;
+    }
+    .autograp-journey {
+        background: url('../images/autograph-tablet-bg.png') no-repeat top center / cover;
     }
     .tilt-container {
         &:hover {
@@ -136,5 +157,8 @@ $primary-color: #DEF1FA;
 @media screen and (max-width:576px) {
     .bg-image {
         background: url('../images/mobile-bg.png') no-repeat top right / cover;
+    }
+    .autograp-journey {
+        background: url('../images/autograph-mobile-bg.png') no-repeat top right / cover;
     }
 }
