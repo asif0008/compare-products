@@ -118,6 +118,13 @@
   background: radial-gradient(50% 50% at 50% 50%, rgba(89, 54, 0, 0.2) 0%, rgba(100, 60, 0, 0) 100%);
 }
 
+.autograp-3-1-journey {
+  background: url("../images/autograph-3-1-tablet-bg.png") no-repeat center/cover;
+}
+.autograp-3-1-journey .radial-gradient {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(89, 54, 0, 0.2) 0%, rgba(100, 60, 0, 0) 100%);
+}
+
 @media screen and (min-width: 1600px) {
   .my-container {
     width: 100%;
@@ -135,6 +142,9 @@
   .autograp-journey {
     background: url("../images/autograph-tablet-bg.png") no-repeat top center/cover;
   }
+  .autograp-3-1-journey {
+    background: url("../images/autograph-3-1-tablet-bg.png") no-repeat top center/cover;
+  }
   .tilt-container:hover {
     transform: none !important;
   }
@@ -145,5 +155,8 @@
   }
   .autograp-journey {
     background: url("../images/autograph-mobile-bg.png") no-repeat top right/cover;
+  }
+  .autograp-3-1-journey {
+    background: url("../images/autograph3-1-mobile-bg.png") no-repeat top right/cover;
   }
 }/*# sourceMappingURL=style.css.map */
