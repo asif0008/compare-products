@@ -131,6 +131,23 @@ $primary-color: #DEF1FA;
     }
 }
 
+.dropdown-menu-one::before {
+    content: '';
+    position: absolute;
+    top: 5%;
+    right: 13%;
+    width: 15px;
+    height: 15px;
+    border-right: 15px solid #ffffff;
+    border-bottom: 15px solid #66339900;
+    transform: rotate(-45deg);
+    transition: border-right .2s ease;
+}
+.dropdown-menu-one:hover::before {
+    border-right: 15px solid #3ed14a;
+    border-bottom: 15px solid #66339900;
+}
+
 // Autograph Journey CSS End
 
 

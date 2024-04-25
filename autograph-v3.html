@@ -12,11 +12,75 @@
 
 <body>
     <section class="autograp-journey w-full">
-        <section class="px-5 container mx-auto">
+        <section class="container mx-auto">
             <!-- Header -->
-            
+            <header class="flex items-center justify-between py-[13px] relative px-5"> 
+                <a href="#" class="block lg:hidden">
+                    <img src="assets/images/bbb-md.png" alt="" class="w-[36px]">
+                </a>
+                <a href="/">
+                    <img src="assets/images/logo.png" alt="logo" class="w-[103px] lg:w-[144px]">
+                </a>
+                <!-- desktop menu -->
+                <div class="flex items-center md:gap-[25px] lg:-[41px] hidden lg:flex">
+                    <div class="group relative cursor-pointer">
+                        <div class="flex items-center gap-[12px] open-font font-[15px] font-semibold text-[#272727]">
+                            Card Category 
+                            <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 0.75L5.5 4.25L10 0.75" stroke="#252525" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>                                
+                        </div>
+                        <div class="flex flex-col rounded-md bg-transparent pt-3 hidden group-hover:block absolute w-full">
+                            <a href="#" class="dropdown-menu-one px-3 py-2 text-[#272727] hover:bg-[#3ed14a] text-sm open-font transition-all duration-200 hover:text-white rounded-t-md inline-block w-full bg-white">Menu Item</a>
+                            <a href="#" class="px-3 py-2 text-[#272727] hover:bg-[#3ed14a] text-sm open-font transition-all duration-200 hover:text-white inline-block w-full bg-white">Menu Item</a>
+                            <a href="#" class="px-3 py-2 text-[#272727] hover:bg-[#3ed14a] text-sm open-font transition-all duration-200 hover:text-white rounded-b-md inline-block w-full bg-white">Menu Item</a>
+                        </div>
+                    </div>
+                    <div class="group relative cursor-pointer">
+                        <div class="flex items-center gap-[12px] open-font font-[15px] font-semibold text-[#272727]">
+                            Card Issuer 
+                            <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 0.75L5.5 4.25L10 0.75" stroke="#252525" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>                                
+                        </div>
+                        <div class="flex flex-col rounded-md bg-transparent pt-3 hidden group-hover:block absolute w-full">
+                            <a href="#" class="dropdown-menu-one px-3 py-2 text-[#272727] hover:bg-[#3ed14a] text-sm open-font transition-all duration-200 hover:text-white rounded-t-md inline-block w-full bg-white">Menu Item</a>
+                            <a href="#" class="px-3 py-2 text-[#272727] hover:bg-[#3ed14a] text-sm open-font transition-all duration-200 hover:text-white inline-block w-full bg-white">Menu Item</a>
+                            <a href="#" class="px-3 py-2 text-[#272727] hover:bg-[#3ed14a] text-sm open-font transition-all duration-200 hover:text-white rounded-b-md inline-block w-full bg-white">Menu Item</a>
+                        </div>
+                    </div>
+                    <div class="group relative cursor-pointer">
+                        <div class="flex items-center gap-[12px] open-font font-[15px] font-semibold text-[#272727]">
+                            Card Range 
+                            <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 0.75L5.5 4.25L10 0.75" stroke="#252525" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>                                
+                        </div>
+                        <div class="flex flex-col rounded-md bg-transparent pt-3 hidden group-hover:block absolute w-full">
+                            <a href="#" class="dropdown-menu-one px-3 py-2 text-[#272727] hover:bg-[#3ed14a] text-sm open-font transition-all duration-200 hover:text-white rounded-t-md inline-block w-full bg-white">Menu Item</a>
+                            <a href="#" class="px-3 py-2 text-[#272727] hover:bg-[#3ed14a] text-sm open-font transition-all duration-200 hover:text-white inline-block w-full bg-white">Menu Item</a>
+                            <a href="#" class="px-3 py-2 text-[#272727] hover:bg-[#3ed14a] text-sm open-font transition-all duration-200 hover:text-white rounded-b-md inline-block w-full bg-white">Menu Item</a>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <img src="assets/images/bbb.png" alt="bbb" class="w-[106px]">
+                    </a>
+                </div>
+                <!-- Hamburger -->
+                <div class="hamburger block lg:hidden">
+                    <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.6087 1.5H28.3913" stroke="#052F5E" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M1.6087 9H28.3913" stroke="#052F5E" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M1.60724 16.5H28.3898" stroke="#052F5E" stroke-width="2" stroke-linecap="round"/>
+                    </svg>                            
+                </div>
+                <!-- mobile menu -->
+                <div class="bg-white absolute top-[100%] left-0 w-full">
+                    
+                </div>
+            </header>
             <!-- Hero Section -->
-            <div class="grid grid-cols md:grid-cols-12 py-[45px] md:py-[75px] gap-[22px] lg:gap-[52px]">
+            <div class="grid grid-cols md:grid-cols-12 py-[45px] md:py-[75px] gap-[22px] lg:gap-[52px] px-5">
                 <div class="md:col-span-5">
                     <div class="block md:hidden mb-[24px]">
                         <h2 class="text-[18px] md:text-[24px] font-bold text-[#da201d] open-font">

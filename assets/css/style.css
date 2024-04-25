@@ -125,6 +125,24 @@
   background: radial-gradient(50% 50% at 50% 50%, rgba(89, 54, 0, 0.2) 0%, rgba(100, 60, 0, 0) 100%);
 }
 
+.dropdown-menu-one::before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  right: 13%;
+  width: 15px;
+  height: 15px;
+  border-right: 15px solid #ffffff;
+  border-bottom: 15px solid rgba(102, 51, 153, 0);
+  transform: rotate(-45deg);
+  transition: border-right 0.2s ease;
+}
+
+.dropdown-menu-one:hover::before {
+  border-right: 15px solid #3ed14a;
+  border-bottom: 15px solid rgba(102, 51, 153, 0);
+}
+
 @media screen and (min-width: 1600px) {
   .my-container {
     width: 100%;
