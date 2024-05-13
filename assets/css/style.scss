@@ -18,6 +18,11 @@ $inter-font: "Inter", sans-serif;
 $green-color: #3FD14A;
 $primary-color: #DEF1FA;
 
+.roboto {
+    font-family: Roboto, 'Open Sans', sans-serif;
+}
+
+
 .bg-green {
     background-color: $green-color;
 }
@@ -153,14 +158,20 @@ $primary-color: #DEF1FA;
 
 
 
-@media screen and (min-width:1600px) {
+@media screen and (min-width:1800px) {
     .my-container {
         width: 100%;
         max-width: 100% !important;
     }
     .container {
         width: 100%;
-        max-width: 1540px !important;
+        max-width: 1640px !important;
+    }
+}
+@media screen and (min-width:1280px) {
+    .custom-container {
+        width: 100%;
+        max-width: 1280px !important;
     }
 }
 
