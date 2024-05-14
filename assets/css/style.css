@@ -148,11 +148,11 @@
 }
 
 .card-ribbon {
-  animation: slideFromLeft 1s ease-in 1.5s forwards;
+  animation: slideFromLeft 1s ease-in 1.2s forwards;
 }
 
 .card-img {
-  animation: slideFromLeft 1s ease-in 1.5s forwards;
+  animation: slideFromLeft 1s ease-in 1.2s forwards;
   right: -180%;
   transform-style: preserve-3d !important;
   transition: all 1.2s ease;
