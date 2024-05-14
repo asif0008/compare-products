@@ -305,5 +305,16 @@
 
     <!-- Script  -->
     <script src="assets/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            setTimeout(() => {
+                const cardImg = document.querySelector('.card-img');
+                cardImg.style.animation = 'unset';
+                cardImg.style.right = 'unset';
+                console.log('cardimg', cardImg);
+            }, 3000);
+        })
+    </script>
 </body>
 </html>
