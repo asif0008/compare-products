@@ -148,11 +148,11 @@
 }
 
 .card-ribbon {
-  animation: slideFromLeft 1s ease-in 1s forwards;
+  animation: slideFromLeft 1s ease-in 1.5s forwards;
 }
 
 .card-img {
-  animation: slideFromLeft 1s ease-in 1s forwards;
+  animation: slideFromLeft 1s ease-in 1.5s forwards;
   right: -180%;
   transform-style: preserve-3d !important;
   transition: all 1s ease;
@@ -171,16 +171,13 @@
   overflow: hidden;
   width: 100%;
   height: 100%;
-  inset: 0;
 }
 .card-img .back-card {
   position: absolute;
   width: 100%;
   height: 100%;
-  inset: 0;
   transform: rotateY(180deg);
   backface-visibility: hidden;
-  overflow: hidden;
 }
 
 @keyframes slideFromLeft {
